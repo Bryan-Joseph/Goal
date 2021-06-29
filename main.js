@@ -74,19 +74,19 @@ function my_keydown(e) {
 
 	}
 	else {
-		if (keyPressed == 'ArrowUp') {
+		if (keyPressed == 'ArrowUp'&& ball.y - ball.size> 0 ) {
 			moveChar(0, -1);
 			console.log("up");
 		}
-		if (keyPressed == 'ArrowDown') {
+		if (keyPressed == 'ArrowDown' && ball.y < 500 - ball.size) {
 			moveChar(0, 1);
 			console.log("down");
 		}
-		if (keyPressed == 'ArrowLeft') {
+		if (keyPressed == 'ArrowLeft' && ball.x - ball.size> 0) {
 			moveChar(-1, 0);
 			console.log("left");
 		}
-		if (keyPressed == 'ArrowRight') {
+		if (keyPressed == 'ArrowRight' && ball.x < 1100 - ball.size) {
 			moveChar(1, 0);
 			console.log("right");
 		}
